@@ -44,4 +44,32 @@ code {
   
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
-  }
+}
+
+.sidebar{
+  position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background: red;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.menu-item {
+  margin-bottom: 10px;
+}
+.menu-item a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.menu-item a:hover {
+  background-color: #f8f9fa;
+  color: #E74C3C;
+}
