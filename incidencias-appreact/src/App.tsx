@@ -24,23 +24,17 @@ import { RequireAuthCliente } from './Componentes/RequiereAuthCliente';
 function App() {
   return (
     <BrowserRouter>
-    <div className='principal'>
-      <br />
-      
-      <h1 >Incidencias</h1>
-      <Navbar />
-      </div>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path='/register' element={<Register/>}/>
-        <Route path="/menuUser" element={<RequireAuthCliente><MenuCliente/></RequireAuthCliente>}/>
+        <Route path="/menu" element={<RequireAuthCliente><MenuCliente/></RequireAuthCliente>}/>
         <Route path='/cliente/nuevoticket' element={<RequireAuthCliente><ClienteNewTicket/></RequireAuthCliente>}/>
         <Route path="/seguimientos/cliente/:dni" element={<RequireAuthCliente><SeguimientoCliente/></RequireAuthCliente>}/>
         <Route path="/tickets" element={<RequireAuth><TicketGestor /></RequireAuth>} />
         <Route path="/gestores" element={<RequireAuth><Gestores/></RequireAuth>}/>
         <Route path="/gestores/edit/:dni" element={<RequireAuth><EditarGestor/></RequireAuth>}/>
         <Route path="/clientes" element={<RequireAuth><Cliente/></RequireAuth>}/>
-        <Route path="/menuAdmin" element={<RequireAuth><MenuAdmin/></RequireAuth>}/>
+        <Route path="/admin" element={<RequireAuth><MenuAdmin/></RequireAuth>}/>
         <Route path="/seguimientos/:id" element={<RequireAuth><Seguimiento/></RequireAuth>}/>
         <Route path="/seguimientos/gestores/:dni" element={<RequireAuth><SeguimientosGestores/></RequireAuth>}/>
         <Route path="/addSeguimiento/:idTicket" element={<RequireAuth><AddSeguimientoComponent/></RequireAuth>}/>
