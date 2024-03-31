@@ -5,7 +5,7 @@ import { Gestor } from '../Entities/Gestor';
 import { Link, useNavigate } from 'react-router-dom';
 import { UsuarioDTO } from "../DTO/UsuarioDTOSave";
 import { GestorSave } from "../DTO/GestorSave";
-
+import { SidebarAdmin } from "./SideBarAdmin";
 
 export const Gestores = () => {
 
@@ -98,6 +98,7 @@ export const Gestores = () => {
 
     return (
         <>
+        <SidebarAdmin/>
         <div className="principal table-responsive">
             <table className="tabla">
                 <tr className="title">

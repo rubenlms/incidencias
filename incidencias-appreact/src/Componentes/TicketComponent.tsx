@@ -3,6 +3,7 @@ import { FormEvent, useEffect, useState } from "react"
 import { Ticket } from "../Entities/Ticket";
 import { TicketDTO } from '../DTO/TicketDTO';
 import { Link, useNavigate } from 'react-router-dom';
+import { SidebarAdmin } from "./SideBarAdmin";
 
 export const TicketGestor = () => {
 
@@ -91,6 +92,7 @@ export const TicketGestor = () => {
 
     return (
         <>
+            <SidebarAdmin/>
             <div className="principal">
                 <Link to={'/gestores/newticket'}>Crear ticket</Link>
                 

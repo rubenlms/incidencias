@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from "axios";
 import { ClienteDTO } from '../DTO/ClienteDTO';
 import { Link, useNavigate } from 'react-router-dom';
+import { SidebarAdmin } from './SideBarAdmin';
 
 export const Cliente = () => {
 
@@ -44,6 +45,7 @@ export const Cliente = () => {
 
     return(
         <>
+        <SidebarAdmin/>
         <div className='principal'>
         <h3>Clientes:</h3>
         <br/>

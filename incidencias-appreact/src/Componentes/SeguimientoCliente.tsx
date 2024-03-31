@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from "axios";
 import { SeguimientoDTO } from '../DTO/SeguimientoDTO';
 import { useParams, Link } from 'react-router-dom';
+import { SidebarAdmin } from './SideBarAdmin';
 
 export const SeguimientoCliente = () => {
 
@@ -27,6 +28,7 @@ export const SeguimientoCliente = () => {
 
     return(
         <>
+        <SidebarAdmin/>
             <div className='principal'>
                 <h3>Seguimientos del ticket {dni}</h3>
                 <table className='tabla'>

@@ -13,11 +13,12 @@ code {
 }
 
 .principal{
-    max-width: 100rem;
+  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   text-align: center;
+  padding-left: 15%;
 }
 
 .tabla, td{
@@ -43,19 +44,20 @@ code {
   background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
   
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
 }
 
 .sidebar{
   position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 200px;
-    background: red;
-    padding: 20px;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15%;
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  padding-left: 0px;
+  padding-top: 50px;
+  color: #fff;
+  text-indent: 15px;
 }
 
 .menu-item {
@@ -66,10 +68,10 @@ code {
   padding: 10px;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
 .menu-item a:hover {
   background-color: #f8f9fa;
-  color: #E74C3C;
+  font-weight: bold;
+  color: #000000;
 }
