@@ -11,6 +11,9 @@ export const SidebarAdmin = () => {
                 <div className="menu-item"><Link to="/clientes">Usuarios</Link></div>
                 <div className="menu-item"><Link to="/gestores">Gestores</Link></div>
                 <div className="menu-item"><Link to="/tickets">Incidencias</Link></div>
+                <div className="menu-item"><Link to="#">Estadísticas</Link></div>
+                <div className="menu-item"><Link to="#">Ver mi perfil</Link></div>
+                <div className="menu-item"><Link to="#">Cerrar sesión</Link></div>
             </div>
         </>
     );
