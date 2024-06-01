@@ -5,6 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Login } from './Componentes/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+// Añadir todos los iconos de solid a la librería
+library.add(fas);
 
 
 const root = ReactDOM.createRoot(

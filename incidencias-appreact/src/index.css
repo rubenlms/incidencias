@@ -33,7 +33,8 @@ code {
 }
 
 .title{
-  background-color: aquamarine;
+  /*background-color: rgb(12, 12, 148);*/
+  font-weight: bold;
 }
 
 .gradient-custom {
@@ -74,4 +75,8 @@ code {
   background-color: #f8f9fa;
   font-weight: bold;
   color: #000000;
+}
+
+.option-btt{
+  padding-right: 5px;
 }
