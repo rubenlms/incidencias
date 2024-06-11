@@ -4,7 +4,11 @@ import { GestorDTO } from "../DTO/GestorDTO";
 import { Link, useNavigate } from "react-router-dom";
 import { GestorSave } from "../DTO/GestorSave";
 
-export const AddGestor = () => {
+interface IProps{
+  mostrarForm: Function,
+}
+
+export const AddGestor = ({ mostrarForm } : IProps) => {
   //let navigate = useNavigate();
   function gestorSave(event: FormEvent) {
     event.preventDefault();
@@ -52,31 +56,49 @@ export const AddGestor = () => {
   return (
     <>
       <div className="principal">
-        <h3>Añade un nuevo gestor</h3>
-        <form onSubmit={gestorSave}>
-          <input type="text" id="dni" name="dni" placeholder="dni" />
-          <br />
-          <input type="text" id="nombre" name="nombre" placeholder="nombre" />
-          <br />
-          <input
-            type="text"
-            id="apellidos"
-            name="apellidos"
-            placeholder="apellidos"
-          />
-          <br />
-          <input
-            type="password"
-            name="password"
-            placeholder="contraseña"
-          ></input>
-          <br />
-          <input
-            className="btn btn-outline-dark option-btt"
-            type="submit"
-            value={"Guardar"}
-          />
-        </form>
+        <div className="container gestor-form">
+          <h3>Añade un nuevo gestor</h3>
+          <form onSubmit={gestorSave}>
+            <input
+              type="text"
+              className="form-control"
+              id="dni"
+              name="dni"
+              placeholder="dni"
+            />
+            <br />
+            <input
+              type="text"
+              className="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="nombre"
+            />
+            <br />
+            <input
+              className="form-control"
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              placeholder="apellidos"
+            />
+            <br />
+            <input
+              className="form-control"
+              type="password"
+              name="password"
+              placeholder="contraseña"
+            ></input>
+            <br />
+            <input
+              className="btn btn-outline-dark option-btt"
+              type="submit"
+              value={"Guardar"}
+            />
+            <button className="btn btn-outline-dark option-btt" onClick={() => {
+              mostrarForm()}}>Ocultar</button>
+          </form>
+        </div>
       </div>
     </>
   );

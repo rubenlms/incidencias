@@ -62,8 +62,11 @@ export const Gestores = () => {
   return (
     <>
       <SidebarAdmin />
-      {visible && <AddGestor/>}
+      {visible && <AddGestor mostrarForm={mostrarForm}/>}
       <div className="principal table-responsive">
+      <div>
+            {!visible && <button className="btn btn-outline-dark option-btt" onClick={mostrarForm}><FontAwesomeIcon icon={faUserPlus} /> Añadir nuevo gestor</button>}
+        </div>
         <table className="tabla table">
           <tr className="title">
             <td>
@@ -103,9 +106,6 @@ export const Gestores = () => {
             );
           })}
         </table>
-        <div>
-            <button className="btn btn-outline-dark option-btt" onClick={mostrarForm}><FontAwesomeIcon icon={faUserPlus} /> Añadir nuevo gestor</button>
-        </div>
       </div>
     </>
   );

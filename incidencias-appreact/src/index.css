@@ -80,3 +80,7 @@ code {
 .option-btt{
   padding-right: 5px;
 }
+
+.gestor-form{
+  max-width: 40% !important;
+}

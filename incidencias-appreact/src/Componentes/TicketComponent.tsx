@@ -119,8 +119,11 @@ export const TicketGestor = () => {
                             <td>{ticket.cliente}</td>
                         </tr>
                         <tr>
-                            <td colSpan={4}><button onClick={()=>verSeguimientos(ticket.idTicket)}>Ver seguimientos de ticket {ticket.idTicket}</button>   <button onClick={()=>addSeguimiento(ticket.idTicket)}>Añadir seguimiento</button>  <button onClick={()=>deleteTicket(ticket.idTicket)}>Eliminar</button>  <button onClick={()=>editTicket(ticket.idTicket)}>Editar</button></td>
-                            
+                            <td colSpan={4}>
+                                <button className="btn btn-outline-dark option-btt" onClick={()=>verSeguimientos(ticket.idTicket)}>Ver seguimientos de ticket {ticket.idTicket}</button>   
+                                <button className="btn btn-outline-dark option-btt" onClick={()=>addSeguimiento(ticket.idTicket)}>Añadir seguimiento</button>  
+                                <button className="btn btn-outline-dark option-btt" onClick={()=>deleteTicket(ticket.idTicket)}>Eliminar</button>  
+                                <button className="btn btn-outline-dark option-btt" onClick={()=>editTicket(ticket.idTicket)}>Editar</button></td>
                         </tr>
                         </>
                     )
